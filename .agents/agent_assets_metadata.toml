@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "ZDDN6e6qp1Et5nI0D9rbA"
+uri = "file://artifacts/arcade-home-care/public/hero-caregiver.png"
+type = "image"
+title = "Hero caregiver embracing seniors"
+
+[[generated]]
+id = "LnX1Wj0tvbpBoI27Nlazg"
+uri = "file://artifacts/arcade-home-care/public/benefits-couple.png"
+type = "image"
+title = "Happy elderly couple at home"

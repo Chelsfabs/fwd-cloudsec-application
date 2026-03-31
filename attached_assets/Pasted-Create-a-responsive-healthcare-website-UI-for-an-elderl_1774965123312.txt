@@ -1,0 +1,102 @@
+Create a responsive healthcare website UI for an elderly home care facility.
+
+Design Style:
+
+- Corporate healthcare look (similar to modern home care agencies)
+- Clean, professional, trustworthy
+- Color theme: blue (#1E6FB8), green (#2FAE66), white
+- Soft gradients and rounded cards
+- Large friendly caregiver and elderly imagery
+- Subtle wave separators between sections
+
+Layout Structure:
+
+1. Navbar (sticky)
+
+- Logo on left: "Arcade Home Care"
+- Links: Home, About, Services, Benefits, Contact
+- Right side green CTA button: "Call Now"
+- Mobile: hamburger menu
+
+2. Hero Section
+
+- Two-column layout (desktop), stacked (mobile)
+- Left: heading "Trusted Elderly Home Care"
+- Supporting text about compassionate in-home care
+- Two buttons: "Get Started" (green) and "Call (925) 575-0709" (outline)
+- Right: caregiver assisting elderly image
+- Curved wave divider at bottom
+
+3. Services Section
+
+- Title: "Our Services"
+- 3-column grid desktop, 1-column mobile
+- Service cards with icons:
+  - Personal Care
+  - Dementia Care
+  - Housekeeping
+  - 24/7 Support
+  - Recovery Care
+  - Companionship
+- Rounded cards with subtle shadow
+- Hover effect: lift + border highlight
+
+4. Benefits Section
+
+- Split layout
+- Left: text description
+- Right: elderly couple image
+- Bullet points:
+  - Preserves independence
+  - Affordable care
+  - Personalized plans
+  - Family involvement
+- "Learn More" button
+
+5. Testimonials Section
+
+- Title: "A Safe Harbor for Those You Love Most"
+- 3 testimonial cards
+- Star ratings
+- Soft gradient backgrounds
+
+6. CTA Banner
+
+- Full width
+- Green-blue gradient background
+- Text: "Need Elderly Care Today?"
+- Phone number
+- "Contact Us" button
+
+7. Footer
+
+- 4 columns:
+  - Logo + description
+  - Quick links
+  - Services
+  - Contact info
+- Dark blue background
+- Social icons
+
+Responsive Requirements:
+
+- Mobile-first
+- Stack hero vertically
+- Convert nav to hamburger
+- Cards become single column
+- Maintain spacing and readability
+
+UI Details:
+
+- Rounded corners (12px–16px)
+- Soft shadows
+- Consistent padding
+- Accessible font sizes
+- Professional healthcare typography
+
+Return:
+
+- Clean component-based structure
+- Semantic HTML
+- Tailwind CSS styling (if using Tailwind)
+- Fully responsive layout
