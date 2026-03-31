@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-primary: #1E6FB8;
+  --color-secondary: #2FAE66;
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+  --color-border: #e5e7eb;
+  --color-card: #ffffff;
+  --color-card-foreground: #111827;
+  --color-muted: #f8fafc;
+  --color-muted-foreground: #6b7280;
+  --color-accent: #eff6ff;
+  --color-accent-foreground: #1E6FB8;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-ring: #1E6FB8;
+  --color-input: #e5e7eb;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #111827;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --radius: 0.75rem;
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 211 71% 42%;
+  --primary: 211 71% 42%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 145 58% 43%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 210 40% 98%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 214 100% 97%;
+  --accent-foreground: 211 71% 42%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+
+  --button-outline: rgba(0,0,0,.10);
+  --badge-outline: rgba(0,0,0,.05);
+  --opaque-button-border-intensity: -8;
+  --elevate-1: rgba(0,0,0,.03);
+  --elevate-2: rgba(0,0,0,.08);
+  --radius: .75rem;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l - 8) / alpha);
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l - 8) / alpha);
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l - 8) / alpha);
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l - 8) / alpha);
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l - 8) / alpha);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+  }
+}
