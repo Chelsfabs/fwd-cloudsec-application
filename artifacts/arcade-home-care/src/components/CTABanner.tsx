@@ -60,19 +60,19 @@ export function CTABanner() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="mailto:info@arcadehomecare.org"
+              href="mailto:info@arcadehomecare.com"
               className="bg-white text-[#1E6FB8] hover:bg-gray-100 font-bold rounded-full px-10 py-4 text-lg shadow-lg transition-colors"
             >
               Contact Us
             </a>
             <a
-              href="https://www.arcadehomecare.org"
+              href="https://www.arcadehomecare.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white/90 hover:text-white font-medium transition-colors"
             >
               <Globe className="w-4 h-4" />
-              www.arcadehomecare.org
+              www.arcadehomecare.com
             </a>
           </div>
         </motion.div>

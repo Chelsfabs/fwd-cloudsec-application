@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import { Facebook, Twitter, Mail, MapPin, Phone, Globe, Printer } from "lucide-react";
 
 export function Footer() {
@@ -12,10 +13,10 @@ export function Footer() {
             <img
               src="/arcade-logo.png"
               alt="Arcade Home Care LLC"
-              className="h-16 w-auto object-contain mb-4 brightness-0 invert"
+              className="h-20 w-auto object-contain mb-4 brightness-0 invert"
             />
             <p className="text-gray-400 leading-relaxed text-sm">
-              Quality non-medical home care for seniors, disabled adults, and veterans in the Bay Area. We are committed to Serve.
+              Quality non-medical home care for seniors, disabled adults, and veterans in the Bay Area.
             </p>
             <p className="text-[#2FAE66] italic text-sm font-medium">...We are committed to Serve</p>
           </div>
@@ -24,16 +25,16 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-3">
               {[
-                { label: 'Home', href: '#home' },
-                { label: 'About Us', href: '#about' },
-                { label: 'Services', href: '#services' },
-                { label: 'Benefits', href: '#benefits' },
-                { label: 'Contact', href: '#contact' },
+                { label: 'Home', href: '/' },
+                { label: 'About Us', href: '/about' },
+                { label: 'Services', href: '/#services' },
+                { label: 'Benefits', href: '/#benefits' },
+                { label: 'Contact', href: '/#contact' },
               ].map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-gray-400 hover:text-[#2FAE66] transition-colors text-sm">
+                  <Link href={link.href} className="text-gray-400 hover:text-[#2FAE66] transition-colors text-sm">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -44,9 +45,9 @@ export function Footer() {
             <ul className="space-y-3">
               {['Personal Care', 'Dementia Care', 'Veteran Care', '24/7 Support', 'Recovery Care', 'Housekeeping', 'Companionship'].map((service) => (
                 <li key={service}>
-                  <a href="#services" className="text-gray-400 hover:text-[#2FAE66] transition-colors text-sm">
+                  <Link href="/#services" className="text-gray-400 hover:text-[#2FAE66] transition-colors text-sm">
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -57,7 +58,7 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-gray-400">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#2FAE66] shrink-0 mt-0.5" />
-                <span>180 Main St, #56-B1000<br />Piedmont Hills, Milpitas, CA</span>
+                <span>6701 Koll Center Pkwy<br />Pleasanton, CA 94566</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#2FAE66] shrink-0" />
@@ -71,14 +72,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Globe className="w-5 h-5 text-[#2FAE66] shrink-0" />
-                <a href="https://www.arcadehomecare.org" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  www.arcadehomecare.org
+                <a href="https://www.arcadehomecare.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  www.arcadehomecare.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#2FAE66] shrink-0" />
-                <a href="mailto:info@arcadehomecare.org" className="hover:text-white transition-colors">
-                  info@arcadehomecare.org
+                <a href="mailto:info@arcadehomecare.com" className="hover:text-white transition-colors">
+                  info@arcadehomecare.com
                 </a>
               </li>
             </ul>

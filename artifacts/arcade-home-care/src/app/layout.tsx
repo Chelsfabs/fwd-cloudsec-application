@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Arcade Home Care LLC',
     description: 'Compassionate non-medical home care for seniors and veterans. We are committed to serve.',
-    url: 'https://www.arcadehomecare.org',
+    url: 'https://www.arcadehomecare.com',
     siteName: 'Arcade Home Care LLC',
     type: 'website',
   },
